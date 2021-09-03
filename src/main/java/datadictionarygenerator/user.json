@@ -1,0 +1,19 @@
+[
+  {
+    "items": {
+      "facilityid": "int",
+      "name": "varchar",
+      "active": "int"
+    },
+    "entity": "facility"
+  },
+  {
+    "items": {
+      "role": "varchar",
+      "bannerid": "varchar",
+      "name": "varchar",
+      "userid": "int"
+    },
+    "entity": "user"
+  }
+]

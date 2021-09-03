@@ -1,0 +1,42 @@
+[
+  {
+    "customer": {
+      "relationships": [
+        {
+          "Orders": {
+            "refKey": "personid",
+            "type": "childTable"
+          }
+        }
+      ],
+      "columns": {
+        "name": "varchar",
+        "personid": "int"
+      },
+      "primaryKey": "personid"
+    }
+  },
+  {
+    "Orders": {
+      "relationships": [
+        {
+          "customer": {
+            "refKey": "personid",
+            "type": "parentTable"
+          }
+        }
+      ],
+      "columns": {
+        "personid": "int",
+        "OrderNumber": "int",
+        "OrderID": "int"
+      },
+      "foreignKey": {
+        "refColumn": "personid",
+        "type": "foreign",
+        "refTable": "customer"
+      },
+      "primaryKey": "OrderID"
+    }
+  }
+]

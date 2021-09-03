@@ -1,0 +1,1 @@
+{"data":[{"role":"teacher","bannerid":"B727","name":"abc","userid":"3"},{"role":"student","bannerid":"B007","name":"abc","userid":"2"}],"columns":{"role":"varchar","bannerid":"varchar","name":"varchar","userid":"int"}}
